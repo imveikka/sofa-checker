@@ -1,1 +1,2 @@
-*.pt # models
+*.pt
+.token
