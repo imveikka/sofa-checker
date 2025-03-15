@@ -7,7 +7,6 @@ from torchvision.utils import draw_bounding_boxes
 from torchvision.transforms.v2.functional import pil_to_tensor, to_pil_image
 import imageio
 from getpass import getpass
-import random
 
 BOT_TOKEN = getpass('token: ')
 
@@ -99,12 +98,10 @@ def detection_loop():
     
 
 def get_image():
-    # reader = imageio.get_reader('<video0>')
-    # img = reader.get_data(0)
-    # reader.close()
-    # data['image_raw'] = Image.fromarray(img)
-    id = random.randint(1, 350)
-    data['image_raw'] = Image.open(f'/home/veikka/Documents/hackaton/images/img_{id:04d}.png')
+    reader = imageio.get_reader('<video0>')
+    img = reader.get_data(0)
+    reader.close()
+    data['image_raw'] = Image.fromarray(img)
     
 
 if __name__ == '__main__':
