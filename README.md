@@ -26,7 +26,7 @@ performs an analysis based on the number of detected heads.
 The SofaChecker was designed to accommodate resources of Raspberry Pi 5
 (with a webcam), where the detection itself takes at least 10 seconds with the 
 current model! Thus, the process of gathering real-life data is threaded, 
-so the interaction with SofaChecker is always smooth!. The update interval 
+so the interaction with SofaChecker is always smooth! The update interval 
 can be easily changed, like other traffic evaluation parameters and messages,
 to satisfy needs of different environments.
 
