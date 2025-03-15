@@ -23,7 +23,7 @@ trained for human head detection. After several experiments, we concluded
 this to be the best model in terms of model size and average accuracy. The bot
 performs an analysis based on the number of detected heads.
 
-The SofaChecker was designed to accommodate resources of Raspberry Pi 4
+The SofaChecker was designed to accommodate resources of Raspberry Pi 5
 (with a webcam), where the detection itself takes at least 10 seconds with the 
 current model! Thus, the process of gathering real-life data is threaded, 
 so the interaction with SofaChecker is always smooth!. The update interval 
